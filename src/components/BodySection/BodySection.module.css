@@ -1,0 +1,62 @@
+.bodySectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.subTabs {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px; /* Adds consistent spacing between buttons */
+  margin-bottom: 10px; /* Slightly larger margin for better separation */
+}
+
+.subTabButton {
+  background-color: var(--background-light); /* Adds a light background for better contrast */
+  border: 1px solid var(--accent-color); /* Adds a border for definition */
+  color: var(--text-color);
+  padding: 8px 16px; /* Adjusts padding for a more balanced appearance */
+  font-size: 14px; /* Sets a readable font size */
+  font-weight: 500;
+  border-radius: 5px; /* Rounds the corners for a modern look */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.subTabButton:hover {
+  background-color: var(--accent-color); /* Adds hover effect */
+  color: #ffffff; /* Makes text white on hover */
+  transform: scale(1.05); /* Adds slight scaling for hover feedback */
+}
+
+.active {
+  background-color: var(--accent-color); /* Highlights the active button */
+  color: #ffffff;
+  border-color: var(--accent-color); /* Matches border with background */
+}
+
+
+.bodyTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.bodyInput {
+  flex: 1;
+  background: var(--input-background);
+  color: var(--text-color);
+  border: none;
+  padding: 10px;
+  font-family: 'Inter', monospace;
+  line-height: 1.5;
+  border-radius: 4px;
+  resize: vertical;
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 50vh;
+  max-height: 70vh;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+}

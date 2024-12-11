@@ -1,0 +1,32 @@
+/* src/components/ParamRow/ParamRow.module.css */
+
+.paramRowContainer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .paramInput {
+    background: var(--input-background);
+    border: none;
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 120px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .removeParamBtn {
+    background: var(--input-background);
+    border: none;
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+  
+  .removeParamBtn:hover {
+    filter: brightness(1.1);
+  }
+  

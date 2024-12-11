@@ -1,0 +1,26 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "main": "electron-main.js",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "electron": "cross-env NODE_ENV=development electron electron-main.js",
+    "build": "vite build",
+    "start": "npm run build && electron electron-main.js"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "electron": "^26.0.0",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^7.0.2",
+    "react-syntax-highlighter": "^15.6.1"
+  }
+}

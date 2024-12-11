@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directories (React)
+build/
+
+# Build directories (Electron)
+dist/
+out/
+
+# Electron packaging artifacts
+*.asar
+*.dmg
+*.exe
+*.app
+*.deb
+*.rpm
+*.tar.gz
+
+# OS-specific files
+.DS_Store           # macOS
+Thumbs.db            # Windows
+
+# IDEs and text editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# .env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories
+jspm_packages/
+
+# Testing
+coverage/
+
+# Misc
+*.log
+
+# Ignore the package-lock.json or yarn.lock (optional, but commonly used to lock dependencies)
+# If you are using Yarn or npm and want to keep track of the lock file, remove the following lines.
+package-lock.json
+yarn.lock

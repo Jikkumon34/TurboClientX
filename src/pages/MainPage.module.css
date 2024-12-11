@@ -1,0 +1,36 @@
+.mainPageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--background);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mainContent {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .requestSide {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .requestContent {
+    margin-top: 10px;
+    flex: 1;
+    overflow: auto;
+    background: var(--card-background);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+  }
+  

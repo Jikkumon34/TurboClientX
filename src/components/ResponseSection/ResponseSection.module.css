@@ -1,0 +1,52 @@
+/* src/components/ResponseSection/ResponseSection.module.css */
+
+.responseSide {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .responseMeta {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card-background);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+  }
+  
+  .metaItem {
+    display: flex;
+    gap: 5px;
+    color: var(--text-color);
+  }
+  
+  .metaItem span {
+    color: #999;
+    font-weight: 500;
+  }
+  
+  .responseContentArea {
+    margin-top: 10px;
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    background: var(--card-background);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+  }
+  
+  .responseContent {
+    max-height: 300px;
+    overflow: auto;
+    border-radius: 4px;
+    /* Remove existing padding and background if the syntax highlighter handles it */
+  }
+  
+  
+  .visible {
+    display: block;
+  }
+  

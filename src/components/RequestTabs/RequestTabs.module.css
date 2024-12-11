@@ -1,0 +1,36 @@
+/* src/components/RequestTabs/RequestTabs.module.css */
+
+.requestTabsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: var(--background-color); /* Default to light gray if no variable is set */
+}
+
+.innerTabs {
+  display: flex;
+  gap: 1rem; /* Use rem for better scalability */
+}
+
+.tabButton {
+  background: none;
+  border: none;
+  color: var(--text-color, #333); /* Default to dark gray if no variable is set */
+  padding: 8px 12px; /* Increase padding for better click target */
+  font-size: .8rem; /* Use rem for consistent text scaling */
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.tabButton:hover {
+  color: var(--hover-text-color, #007bff); /* Default to black on hover */
+
+}
+
+.active {
+  color: var(--active-text-color, #007bff); /* Default to a blue accent */
+  border-bottom-color: var(--accent-color, #007bff); /* Default to blue */
+  font-weight: bold; /* Highlight active tab */
+}
