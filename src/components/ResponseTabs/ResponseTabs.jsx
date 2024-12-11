@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './ResponseTabs.module.css';
 
-function ResponseTabs({ activeTab, setActiveTab }) {
+function ResponseTabs({ activeTab, setActiveTab, hasCookies }) {
   return (
     <div className={styles.responseTabsContainer}>
       <div className={styles.innerTabs}>
@@ -18,6 +18,14 @@ function ResponseTabs({ activeTab, setActiveTab }) {
         >
           Headers
         </button>
+        {hasCookies && (
+          <button
+            className={`${styles.tabButton} ${activeTab === 'cookies' ? styles.active : ''}`}
+            onClick={() => setActiveTab('cookies')}
+          >
+            Cookies
+          </button>
+        )}
       </div>
     </div>
   );

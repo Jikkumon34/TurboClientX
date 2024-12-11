@@ -1,0 +1,93 @@
+/* src/components/AuthSection/AuthSection.module.css */
+
+.authSectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--text-color);
+    padding: 20px;
+    background-color: var(--background-light);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .input,
+  .select {
+    background: var(--input-background);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .input:focus,
+  .select:focus {
+    outline: none;
+    border-color: var(--accent-color-dark);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666' d='M6 8L0.5 0h11L6 8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 8px;
+    cursor: pointer;
+  }
+  
+  .authButton {
+    align-self: flex-start;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .authButton:hover {
+    background-color: var(--accent-color-dark);
+    transform: scale(1.05);
+  }
+  
+  .togglePasswordButton {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    margin-top: -30px; /* Adjust based on input padding */
+  }
+  
+  .errorMessage {
+    color: #ff4d4f;
+    font-size: 12px;
+  }
+  

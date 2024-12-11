@@ -60,3 +60,49 @@
   height: calc(100vh - 20px);
   overflow-y: auto;
 }
+.formBodyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addFormFieldButton {
+  align-self: flex-start;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addFormFieldButton:hover {
+  background-color: #333; /* adjust as desired */
+}
+
+.formFieldRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.formKeyInput, .formValueInput, .formFileInput, .formFieldType {
+  background: var(--input-background);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.removeFormFieldButton {
+  background-color: #d9534f;
+  color: #ffffff;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.removeFormFieldButton:hover {
+  background-color: #c9302c;
+}

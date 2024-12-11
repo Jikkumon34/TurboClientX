@@ -19,14 +19,8 @@ function RequestTabs({ activeTab, setActiveTab }) {
           Headers
         </button>
         <button
-          className={`${styles.tabButton} ${activeTab === 'headers' ? styles.active : ''}`}
-          onClick={() => setActiveTab('headers')}
-        >
-          Headers
-        </button>
-        <button
-          className={`${styles.tabButton} ${activeTab === 'headers' ? styles.active : ''}`}
-          onClick={() => setActiveTab('headers')}
+          className={`${styles.tabButton} ${activeTab === 'auth' ? styles.active : ''}`}
+          onClick={() => setActiveTab('auth')}
         >
           Auth
         </button>
